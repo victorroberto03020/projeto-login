@@ -23,7 +23,7 @@ main {
     width: 100vw;
 }
 
-section#login {
+section#login {     /* Conteudo Principal */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -40,7 +40,7 @@ section#login {
     transition-timing-function: ease;
 }
 
-section#login > div#imagem {
+section#login > div#imagem {     /* imagem colocada */
     display: block;
     background: url(../imagem/fundo-tela-login.jpg);
     background-size: cover;
@@ -48,21 +48,9 @@ section#login > div#imagem {
     height: 200px;
 }
 
-section#login > div#formulario {
+section#login > div#formulario {     
     display: block;
     padding: 10px;
-}
-
-div.campo {
-    display: block;
-    background-color: #5f2c82;
-    border-radius: 5px;
-    margin: 5px 0px;
-    height: 40px;
-}
-
-div.campo > label {
-    display: none;
 }
 
 div#formulario > h1 {
@@ -73,6 +61,39 @@ div#formulario > h1 {
 div#formulario > p {
     font-size: 0.8em;
     padding: 10px;
+}
+
+div.campo {     /* input todo */
+    display: block;
+    background-color: #5f2c82;
+    border-radius: 8px;
+    margin: 5px 0px;
+    height: 40px;
+}
+
+div.campo > span {     /* icone */
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {     /* input caixa de texto */
+    background-color: #4eadaa;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 40px;
+    border: none;
+    border-radius: 7px;
+    transform: translateY(-10px);
+}
+
+div.campo > label {
+    display: none;
+}
+
+div.campo > input:focus-within {
+    background-color: white;
 }
 
 form > input[type=submit] {
