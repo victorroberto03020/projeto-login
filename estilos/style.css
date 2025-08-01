@@ -65,6 +65,7 @@ div#formulario > p {
 
 div.campo {     /* input todo */
     display: block;
+    border: 2px solid #5f2c82;
     background-color: #5f2c82;
     border-radius: 8px;
     margin: 5px 0px;
@@ -75,17 +76,17 @@ div.campo > span {     /* icone */
     color: white;
     font-size: 2em;
     width: 40px;
-    padding: 5px;
+    padding: 4px;
 }
 
 div.campo > input {     /* input caixa de texto */
-    background-color: #4eadaa;
+    background-color: #80c7c3;
+    border-radius: 8px;
     font-size: 1em;
     width: calc(100% - 45px);
-    height: 40px;
+    height: 37px;
     border: none;
-    border-radius: 7px;
-    transform: translateY(-10px);
+    transform: translateY(-12px);
 }
 
 div.campo > label {
